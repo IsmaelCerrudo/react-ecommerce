@@ -1,6 +1,6 @@
 import "../../Styles/navbar.css";
-import { FiInstagram, FiFacebook } from "react-icons/fi";
-import { ImWhatsapp } from "react-icons/im";
+import CartWidget from './CartWidget';
+
 
 export function Navbar({ logo }) {
   return (
@@ -21,9 +21,7 @@ export function Navbar({ logo }) {
       </div>
       <img src={logo} alt="logo" className="logo m-auto" />
       <div className="d-inline-flex m-auto social-list">
-        <FiInstagram />
-        <FiFacebook />
-        <ImWhatsapp />
+        <CartWidget/>
       </div>
     </nav>
   );

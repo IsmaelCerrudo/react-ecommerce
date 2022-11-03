@@ -10,6 +10,26 @@
   margin-left: 50%;
 }
 
+.decoration_2 {
+  z-index: 6;
+  position: absolute;
+  background-color: black;
+  height: 800px;
+  width: 800px;
+  -webkit-clip-path: circle(50% at 38% 50%);
+          clip-path: circle(50% at 38% 50%);
+  margin-top: 10%;
+}
+
+.array-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.array-container .title-container {
+  margin: 8% auto;
+}
+
 * {
   font-family: "PT Serif", serif;
   margin: 0px;
@@ -23,6 +43,9 @@ a {
 
 .contenedor {
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 .navbarr {
@@ -39,7 +62,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .navbarr .nav-link:hover {
-  color: rgb(255, 255, 255);
+  color: #ffbf00;
 }
 .navbarr .social-list {
   z-index: 15;
@@ -47,7 +70,7 @@ a {
 .navbarr .social-list svg {
   color: #fff;
   font-size: 1.3em;
-  margin: 10px;
+  margin: 15px;
   z-index: 20;
   transition: all 0.3s ease-in-out;
 }

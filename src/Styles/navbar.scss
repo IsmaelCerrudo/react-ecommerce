@@ -5,12 +5,17 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  
 }
+
 a {
   text-decoration: none;
 }
 .contenedor {
   position: relative;
+  width:100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 .navbarr {
   position: absolute;
@@ -26,14 +31,14 @@ a {
     transition: all 0.3s ease-in-out;
   }
   .nav-link:hover {
-    color: rgb(255, 255, 255);
+    color: #ffbf00
   }
   .social-list {
     z-index: 15 ;
     svg {
       color: #fff;
       font-size: 1.3em;
-      margin: 10px;
+      margin: 15px;
       z-index: 20;
       transition: all 0.3s ease-in-out;
     }
