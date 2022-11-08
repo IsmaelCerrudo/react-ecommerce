@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navbar__list {
+  width: 50%;
+  display: flex;
+}
+.navbar .navbar__list .navbar__list-element {
+  list-style: none;
+  margin: auto;
+}
+
+.navbar-icons {
+  display: flex;
+}
+.navbar-icons svg {
+  margin: 40px 10px;
+}/*# sourceMappingURL=index.css.map */

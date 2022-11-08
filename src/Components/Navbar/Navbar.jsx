@@ -1,28 +1,22 @@
-import "../../Styles/navbar.css";
-import CartWidget from './CartWidget';
-
-
-export function Navbar({ logo }) {
+import '../../Styles/index.css'
+import CartWidget from './CartWidget'
+import logo from '../../logo.svg'
+function Navbar() {
   return (
-    <nav className="navbarr d-flex justify-content-between">
-      <div className="d-inline-flex m-auto" id="">
-        <a className="nav-link" href="#">
-          Inicio
-        </a>
-        <a className="nav-link" href="#">
-          Produtos
-        </a>
-        <a className="nav-link" href="#">
-          Local
-        </a>
-        <a className="nav-link" href="#">
-          Contacto
-        </a>
-      </div>
-      <img src={logo} alt="logo" className="logo m-auto" />
-      <div className="d-inline-flex m-auto social-list">
+    <>
+    <nav className='navbar'>
+    <img src={logo} alt="react.svg" className='logo' />
+    <ul className='navbar__list'>
+        <li className='navbar__list-element'>Inicio</li>
+        <li className='navbar__list-element'>Productos</li>
+    </ul>
+    <div className='navbar-icons'>
         <CartWidget/>
-      </div>
+    </div>
     </nav>
-  );
+
+    </>
+  )
 }
+
+export default Navbar
