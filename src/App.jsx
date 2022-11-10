@@ -1,14 +1,13 @@
-import logo from "./logo.svg";
-import  Navbar  from "./Components/Navbar/Navbar";
-import  Header from "./Components/home/Header/Header";
+import Home from './Components/home/Home'
+import {Routes,Route} from 'react-router-dom'
 import "./Styles/index.css";
-const titulos = ["Elegante", "Bello", "Fino"]
 export function App() {
   return (
     <div className=" contenedor">
-      <Navbar logo={logo} />
-      <Header />
+      <Routes>
+        <Route path="" element={<Home/>}/>
       {/* <Texto tittle ={titulos}/> */}
+      </Routes>
     </div>
   );
 }

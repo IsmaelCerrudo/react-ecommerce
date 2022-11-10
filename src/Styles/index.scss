@@ -2,25 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
 }
-.logo{
-    width: 100px;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    .navbar__list{
-        width: 50%;
-        display: flex;
-        .navbar__list-element{
-            list-style: none;
-            margin:auto;
-        }
-    }
-}
-.navbar-icons{
-    display: flex;
-    svg{
-        margin: 40px 10px;
-    }
-}
+@import '../Components//home/Navbar/navbar';
+@import '../Components/home/Header/Header';

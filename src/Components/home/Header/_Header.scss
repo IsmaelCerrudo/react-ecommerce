@@ -1,0 +1,13 @@
+.card{
+    width: 500px ;
+    height: 400px ;
+    background-color: #000 ;
+    position: relative;
+    .card__img{
+        position: absolute;
+        .card__img-text{
+            position: absolute;
+            color: #fff;
+        }
+    }
+}

@@ -1,11 +1,12 @@
-import React from 'react'
 
 function Header() {
   return (
-    <div>
-      
+    <div className="card">
+      <div className="card__img">
+        <p className="card__img-text">HHHH</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
