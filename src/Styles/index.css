@@ -134,16 +134,66 @@
   width: 100%;
 }
 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .card {
-  width: 500px;
+  width: 300px;
   height: 400px;
-  background-color: #000;
   position: relative;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../img/remera.jpeg");
 }
-.card .card__img {
-  position: absolute;
-}
-.card .card__img .card__img-text {
+.card .card-text {
+  text-shadow: 1px 1px 2px #000;
   position: absolute;
   color: #fff;
+  margin-bottom: 20%;
+}
+.card .active {
+  display: none;
+}
+
+.opacidad {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../img/remera.jpeg");
+  transition: all 0.3s ease-in-out;
+  filter: brightness(70%);
+}
+.opacidad .active {
+  display: none;
+}
+.opacidad .card-desc {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.productContainer .product {
+  width: 300px;
+  height: 500px;
 }/*# sourceMappingURL=index.css.map */

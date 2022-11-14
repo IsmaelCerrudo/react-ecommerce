@@ -6,11 +6,6 @@ function CartWidget() {
       <FiInstagram />
       <FiFacebook />
       <ImWhatsapp />
-      <div onClick={()=>{
-        
-      }}>
-        <FiShoppingCart/>
-      </div>
     </>
   );
 }

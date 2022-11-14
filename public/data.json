@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "src/img/remera.jpeg",
+    "name": "Remera 1",
+    "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
+  },
+  {
+    "id": 2,
+    "img": "src/img/remera.jpeg",
+    "name": "Remera 2",
+    "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
+  },
+  {
+    "id": 3,
+    "img": "src/img/remera.jpeg",
+    "name": "Remera 3",
+    "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
+  },
+  {
+    "id": 4,
+    "img": "src/img/remera.jpeg",
+    "name": "Remera 4",
+    "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
+  },
+  {
+    "id": 5,
+    "img": "src/img/remera.jpeg",
+    "name": "Remera 5",
+    "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
+  }
+]

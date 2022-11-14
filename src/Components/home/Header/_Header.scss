@@ -1,13 +1,46 @@
-.card{
-    width: 500px ;
-    height: 400px ;
-    background-color: #000 ;
+@mixin cardss {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  @include cardss;
+  background-image: url("../img/remera.jpeg");
+
+  .card-text {
+    text-shadow: 1px 1px 2px #000;
+    position: absolute;
+    color: #fff;
+    margin-bottom: 20%;
+  }
+  .active {
+    display: none;
+  }
+
+}
+.opacidad {
+  @include cardss;
+  background-image: url("../img/remera.jpeg");
+  transition: all 0.3s ease-in-out ;
+  filter: brightness(70%);
+  .active{
+    display: none;
+  }
+  .card-desc {
     position: relative;
-    .card__img{
-        position: absolute;
-        .card__img-text{
-            position: absolute;
-            color: #fff;
-        }
-    }
+    color: #fff;
+    text-align: center;
+  }
 }
