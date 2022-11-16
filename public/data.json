@@ -2,43 +2,44 @@
   {
     "id": 1,
     "type": "remera",
-    "img": "../src/img/remera2.jpg",
+    "img": "remera2.jpg",
     "name": "Remera 1",
     "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
   },
   {
     "id": 2,
     "type": "remera",
-    "img": "../../img/remera2.jpg",
+    "img": "remera2.jpg",
     "name": "Remera 2",
     "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
   },
   {
     "id": 3,
     "type":"pantalon",
-    "img": "../../img/remera2.jpg",
+    "img": "remera2.jpg",
     "name": "Pantalon 1",
     "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
   },
   {
     "id": 4,
     "type":"pantalon",
-    "img": "../../img/remera2.jpg",
+    "img": "remera2.jpg",
     "name": "Pantalon 2",
     "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
   },
   {
     "id": 5,
     "type": "calza",
-    "img": "../../img/remera2.jpg",
+    "img": "remera2.jpg",
     "name": "Calza 1",
     "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
   },
   {
     "id": 6,
     "type": "calza",
-    "img": "../../img/remera2.jpg",
+    "img": "remera2.jpg",
     "name": "Calza 2",
     "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore, doloribus eaque totam cupiditate tenetur et nisi fugit sapiente maiores autem natus architecto saepe ad pariatur laborum amet laboriosam quibusdam!"
   }
 ]
+

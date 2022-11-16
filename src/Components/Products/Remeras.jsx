@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import "../../Styles/index.css";
 function Remeras() {
   const [data, setData] = useState([]);
-  const [remeras, setRemeras] = useState([]);
+  const [filtrado, setfiltrado] = useState([]);
+  let { id } = useParams();
+
   const getData = async () => {
     const response = await fetch(`data.json`, {
       headers: {
@@ -14,20 +18,27 @@ function Remeras() {
   };
   useEffect(() => {
     getData();
-   console.log(data)
   }, []);
-  <>
-    <div>
-      {remeras.map((el, i) => {
-        return (
-          <div key={i}>
-            <div>{el.name}</div>
-            <div>{el.desc}</div>
-          </div>
-        );
-      })}
-    </div>
-  </>;
+  useEffect(() => {
+    const filtro = data.filter((el) => el.id === parseInt(id));
+    setfiltrado(filtro);
+  }, [data]);
+
+  return (
+    <>
+      <div className="productContainer">
+        {filtrado.map((el, i) => {
+          let img = require("../../img/" + el.img);
+          return (
+            <div className="product" key={i}>
+              <img src={img} className="product_img" alt="" />
+              <div className="product_text">{el.name}</div>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
 }
 
 export default Remeras;
