@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import '../../Styles/index.css'
+import {Link,} from 'react-router-dom'; 
+import "../../Styles/index.css";
+import remera from "../../img/remera2.jpg";
 function Products() {
   const [data, setData] = useState([]);
   const getData = async () => {
@@ -15,16 +17,23 @@ function Products() {
   useEffect(() => {
     getData();
   }, []);
-  return <div className="productContainer">{data.map((el, i) => {
-    console.log(el)
-    return(
-        <div className="product" key={i} >
-            <img src={el.img} alt="" />
-            <div>{el.name}</div>
-
-        </div>
-    )
-  })}</div>;
+  return (
+    <>
+      <div className="productContainer">
+        {data.map((el, i) => {
+          console.log(el);
+          return (
+            <Link key={i} to={`/${el.id}`}>
+              <div className="product" key={i}>
+                <img src={remera} className="product_img" alt="" />
+                <div className="product_text">{el.name}</div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </>
+  );
 }
 
 export default Products;

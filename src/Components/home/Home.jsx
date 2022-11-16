@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header/Header";
-import Navbar from "./Navbar/Navbar";
 import '../../Styles/index.css'
 
 function Home() {

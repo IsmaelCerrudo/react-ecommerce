@@ -194,6 +194,15 @@
   align-items: center;
 }
 .productContainer .product {
+  margin: 20px;
+  text-align: center;
   width: 300px;
   height: 500px;
+}
+.productContainer .product .product_img {
+  width: 300px !important;
+  height: 500px !important;
+}
+.productContainer .product .product_text {
+  margin-top: 10px;
 }/*# sourceMappingURL=index.css.map */

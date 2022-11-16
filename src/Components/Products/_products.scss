@@ -1,10 +1,20 @@
-.productContainer{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-.product{
-width: 300px;
-height: 500px;
-}
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .product {
+    margin:20px;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+
+    .product_img{
+        width:300px !important;
+        height:500px !important;
+    }
+    .product_text{
+        margin-top:10px;
+    }
+  }
 }
