@@ -9,7 +9,9 @@ import { productsContext } from "./Components/prodctosContext/productoContext";
 import "./Styles/index.css";
 import { useState } from "react";
 export function App() {
-  const [carrito, setCarrito] = useState([]);
+  const [carrito, setCarrito] = useState(
+    JSON.parse(localStorage.getItem("carrito")) || []
+  );
 
   let contextValue = {
     carrito: carrito,

@@ -17,6 +17,7 @@ const Carrito = () => {
                 <div key={i}>
                   <img src={img} className="product_img" alt="" />
                   <div className="product_text">{el.name}</div>
+                  <div className="product_text">cantidad: {el.cantidad}</div>
                 </div>
               </Link>
             </div>

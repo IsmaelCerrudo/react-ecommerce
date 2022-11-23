@@ -226,7 +226,31 @@
 }
 
 .footer {
+  margin-top: 50px;
   width: 100%;
   height: 350px;
-  background-color: #eee;
+  background-color: #fff;
+  border-radius: 20px 20px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer_info {
+  text-align: center;
+  margin: 20px;
+}
+.footer .footer_info .footer_info-title {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.footer .footer_info svg {
+  margin: 10px 15px 0 0;
+}
+.footer .maps {
+  width: 100%;
+  height: 50%;
+  border: 0;
 }/*# sourceMappingURL=index.css.map */

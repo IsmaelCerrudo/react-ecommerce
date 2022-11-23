@@ -27,10 +27,13 @@ function Products() {
       let index = _carrito.findIndex((i) => i.id === producto.id);
       _carrito[index].cantidad++;
       setCarrito(_carrito);
+      localStorage.setItem("carrito", JSON.stringify(carrito));
       return;
     }
     producto.cantidad = 1;
     setCarrito((prev) => [producto, ...prev]);
+    console.log(carrito);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
   };
   useEffect(() => {
     console.log(carrito);
