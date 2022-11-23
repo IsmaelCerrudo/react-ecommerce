@@ -12,10 +12,13 @@ export function App() {
   const [carrito, setCarrito] = useState(
     JSON.parse(localStorage.getItem("carrito")) || []
   );
+  const [contSuma, setContSuma] = useState(0);
 
   let contextValue = {
     carrito: carrito,
     setCarrito: setCarrito,
+    contSuma: contSuma,
+    setContSuma: setContSuma,
   };
   return (
     <div className=" contenedor">
