@@ -3,19 +3,12 @@ import { productsContext } from "../prodctosContext/productoContext";
 import "../../Styles/index.css";
 
 const Carrito = () => {
-  const { carrito, setCarrito, contSuma, setContSuma } =
+  const { carrito, setCarrito, contSuma, setContSuma, data } =
     useContext(productsContext);
-  const handleSum = () => {
-    setContSuma(contSuma + 1);
-    console.log(contSuma);
+  const handleSum = (data) => {
+
   };
-  // useEffect(() => {
-  //   let _carrito = [...carrito];
-  //   let index = _carrito.findIndex((i) => i.id === carrito.id);
-  //   _carrito[index].cantidad = contSuma;
-  //   setCarrito(_carrito);
-  //   console.log(carrito.cantidad);
-  // }, [contSuma]);
+
   return (
     <>
       <div className="productContainer">
@@ -29,7 +22,7 @@ const Carrito = () => {
                 <button
                   className="carrito_btn"
                   onClick={() => {
-                    handleSum();
+                    handleSum(data);
                   }}
                 >
                   +

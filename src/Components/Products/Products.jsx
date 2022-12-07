@@ -4,8 +4,7 @@ import "../../Styles/index.css";
 import remera from "../../img/remera2.jpg";
 import { productsContext } from "../prodctosContext/productoContext";
 function Products() {
-  const [data, setData] = useState([]);
-  const { carrito, setCarrito } = useContext(productsContext);
+  const { carrito, setCarrito, data, setData } = useContext(productsContext);
   const getData = async () => {
     const response = await fetch(`data.json`, {
       headers: {
@@ -23,10 +22,10 @@ function Products() {
     let existe = carrito.some((el) => el.id === producto.id);
 
     if (existe) {
-      // let _carrito = [...carrito];
-      // let index = _carrito.findIndex((i) => i.id === producto.id);
-      // _carrito[index].cantidad = contSuma;
-      setCarrito(carrito);
+      let _carrito = [...carrito];
+      let index = _carrito.findIndex((i) => i.id === producto.id);
+      _carrito[index].cantidad++;
+      setCarrito(_carrito);
       localStorage.setItem("carrito", JSON.stringify(carrito));
       return;
     }
